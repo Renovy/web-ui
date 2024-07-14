@@ -18,6 +18,8 @@ jobs:
       - name: install
         working-directory: packages/web-ui
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: build
         working-directory: packages/web-ui
         run: npm build
@@ -37,6 +39,8 @@ jobs:
       - name: install
         working-directory: packages/web-ui
         run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
       - name: build
         working-directory: packages/web-ui
         run: npm build
