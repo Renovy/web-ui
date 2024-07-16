@@ -40,18 +40,15 @@ jobs:
         uses: actions/configure-pages@v5
 
       - name: create .npmrc
-        working-directory: apps/docs
         run: |
-          echo "@username:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: install
-        working-directory: apps/docs
         run: npm ci
 
       - name: build
-        working-directory: apps/docs
-        run: npm run build
+        run: npm run build-docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
