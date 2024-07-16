@@ -7,3 +7,9 @@
     --accent: 35, 69, 107;
   }
 }
+
+@layer components {
+  h1 {
+    @apply text-4xl;
+  }
+}
