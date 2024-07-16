@@ -4,6 +4,7 @@
   "description": "",
   "scripts": {
     "build": "pnpm run --filter @renovy/web-ui build",
+    "build-docs": "pnpm run --filter docs build",
     "publish": "pnpm run --filter @renovy/web-ui publish",
     "dev": "pnpm run --parallel --filter @renovy/web-ui --filter examples \"/^dev.*/\""
   },
