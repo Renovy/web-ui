@@ -6,6 +6,10 @@
   :root {
     --accent: 35, 69, 107;
   }
+
+  html {
+    @apply text-slate-700 bg-white dark:bg-slate-700 dark:text-white;
+  }
 }
 
 @layer components {
