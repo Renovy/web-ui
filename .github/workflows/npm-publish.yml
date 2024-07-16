@@ -20,7 +20,7 @@ jobs:
       - name: create .npmrc
         working-directory: packages/web-ui
         run: |
-          echo "@username:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: install
@@ -47,7 +47,7 @@ jobs:
       - name: create .npmrc
         working-directory: packages/web-ui
         run: |
-          echo "@username:registry=https://npm.pkg.github.com" >> .npmrc
+          echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: install
