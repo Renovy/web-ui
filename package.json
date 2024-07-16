@@ -3,15 +3,18 @@
   "version": "0.0.1",
   "description": "",
   "scripts": {
-    "build": "pnpm run --filter @renovy/web-ui build",
-    "build-docs": "pnpm run --filter docs build",
-    "publish": "pnpm run --filter @renovy/web-ui publish",
-    "dev": "pnpm run --parallel --filter @renovy/web-ui --filter docs \"/^dev.*/\""
+    "build": "npm run build -w @renovy/web-ui",
+    "build-docs": "npm run build -w docs",
+    "publish": "npm run publish -w @renovy/web-ui",
+    "dev": "concurrently --kill-others \"npm run dev -w=docs\" \"npm run dev -w=@renovy/web-ui\""
   },
   "keywords": [],
   "author": "",
   "workspaces": [
     "apps/docs",
     "packages/web-ui"
-  ]
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
 }
