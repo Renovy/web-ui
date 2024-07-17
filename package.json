@@ -6,7 +6,7 @@
     "build": "npm run build -w @renovy/web-ui",
     "build-docs": "npm run build -w docs",
     "publish": "npm run publish -w @renovy/web-ui",
-    "dev": "concurrently --kill-others \"npm run dev -w=docs\" \"npm run dev -w=@renovy/web-ui\""
+    "dev": "concurrently --kill-others \"npm run dev -w=docs\" \"npm run dev -w=@renovy/web-ui\" \"npm run dev-styles -w=@renovy/web-ui\""
   },
   "keywords": [],
   "author": "",

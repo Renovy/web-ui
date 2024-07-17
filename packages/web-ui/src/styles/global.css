@@ -2,43 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-  :root {
-    --background: #F4F4F4;
-    --foreground: #2B303B;
+:root {
+  --background: #F4F4F4;
+  --foreground: #2B303B;
 
-    --background-alt: #2B303B;
-    --background-alt-darker: #272B34;
-    --foreground-alt: #FFF;
+  --border: rgba(33,33,33,.14);
 
-    --border: rgba(33,33,33,.14);
+  --accent: 21, 229, 119;
+  --accent-foreground: 255, 255, 255;
 
-    --accent: 21, 229, 119;
-    --accent-foreground: 255, 255, 255;
+  --input-border: var(--border);
+  --input-background: #FFF;
+  --input-ring: rgb(var(--accent));
+  
+  --radius: 1rem;
 
-    --input-border: var(--border);
-    --input-background: #FFF;
-    --input-ring: rgb(var(--accent));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-    --button-background: #FFF;
-    --button-foreground: var(--foreground);
-    
-    --radius: rem;
+.dark {
+  --background: #2B303B;
+  --foreground: #FFFFFF;
+  
+  --border: 240 3.7% 15.9%;
+  
+  --input-border: var(--border);
+  --input-background: #FFF;
+  --input-ring: 240 4.9% 83.9%;
+}
 
-    font-synthesis: none;
-    text-rendering: optimizeLegibility;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-
-  .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    
-    --border: 240 3.7% 15.9%;
-    
-    --input-border: var(--border);
-    --input-background: #FFF;
-    --ring: 240 4.9% 83.9%;
+@layer components {
+  html {
+    @apply bg-[--background] text-[--foreground];
   }
 }

@@ -5,15 +5,16 @@
 @layer base {
   :root {
     --accent: 35, 69, 107;
+
+    --page-padding: 0.5rem;
   }
 
-  html {
-    @apply text-slate-700 bg-white dark:bg-slate-700 dark:text-white;
+  .dark {
   }
 }
 
 @layer components {
   h1 {
-    @apply text-4xl;
+    @apply text-4xl my-3 pb-2 border-b border-zinc-300 dark:border-slate-500;
   }
 }
