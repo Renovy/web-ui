@@ -18,17 +18,14 @@ jobs:
           node-version: 18
 
       - name: create .npmrc
-        working-directory: packages/web-ui
         run: |
           echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: install
-        working-directory: packages/web-ui
         run: npm ci
 
       - name: build
-        working-directory: packages/web-ui
         run: npm run build
 
   publish-gpr:
@@ -45,21 +42,17 @@ jobs:
           registry-url: https://npm.pkg.github.com/
 
       - name: create .npmrc
-        working-directory: packages/web-ui
         run: |
           echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
 
       - name: install
-        working-directory: packages/web-ui
         run: npm ci
 
       - name: build
-        working-directory: packages/web-ui
         run: npm run build
 
       - name: publish
-        working-directory: packages/web-ui
         run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
