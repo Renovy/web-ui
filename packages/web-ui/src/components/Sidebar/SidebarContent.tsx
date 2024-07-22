@@ -1,18 +1,13 @@
 import { ReactNode } from "react";
-import { useSidebar } from "../../stores";
 import { cn } from "../../util";
 
 export type SidebarContentProps = {
   children: ReactNode;
+  className?: string;
 };
 
-export function SidebarContent({ children }: SidebarContentProps) {
-  const { isOpen } = useSidebar();
-
-  const classes = cn(
-    "fixed lg:hidden md:left-0 z-20 h-full flex-col bg-alt w-[280px] min-w-[280px] max-w-[280px] md:flex transition-all duration-300",
-    isOpen ? "left-0" : "-left-[350px]",
-  );
+export function SidebarContent({ children, className }: SidebarContentProps) {
+  const classes = cn("flex flex-col p-5 min-w-[240px]", className);
 
   return <nav className={classes}>{children}</nav>;
 }
