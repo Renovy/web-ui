@@ -6,7 +6,7 @@ export function MobileNav() {
   return (
     <nav>
       <Sheet.Root>
-        <Sheet.Trigger asChild>
+        <Sheet.Trigger>
           <Button.Root variant="ghost" size="icon">
             <Button.Icon className="text-xl">
               <HiMenuAlt1 />

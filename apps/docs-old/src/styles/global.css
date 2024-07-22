@@ -15,6 +15,15 @@
 
 @layer components {
   h1 {
-    @apply text-4xl my-3 pb-2 border-b border-zinc-300 dark:border-slate-500;
+    @apply text-4xl my-3 pb-2;
+  }
+
+  h2 {
+    @apply text-3xl my-3 pb-2 border-b border-zinc-300 dark:border-slate-500;
+  }
+
+  pre {
+    overflow-x: auto;
+    @apply p-4 rounded-md;
   }
 }
