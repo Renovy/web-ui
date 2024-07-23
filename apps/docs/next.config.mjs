@@ -6,6 +6,7 @@ import oneDarkPro from "shiki/themes/one-dark-pro.mjs";
 const nextConfig = {
   output: "export",
   distDir: "dist",
+  basePath: ".",
   images: {
     domains: [],
   },
