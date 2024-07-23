@@ -6,15 +6,14 @@ import { FaSpinner } from "react-icons/fa6";
 
 import { buttonVariants } from "./ButtonVariants";
 import { cn } from "../../util/cn";
-import { Button } from ".";
+import { ButtonIcon } from "./ButtonIcon";
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
-    VariantProps<typeof buttonVariants> {
-  isLoading?: boolean;
-}
+type ButtonRootProps = React.ButtonHTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof buttonVariants> & {
+    isLoading?: boolean;
+  };
 
-const ButtonRoot = React.forwardRef<HTMLButtonElement, ButtonProps>(
+const ButtonRoot = React.forwardRef<HTMLButtonElement, ButtonRootProps>(
   ({ variant, className, isLoading, type = "button", children, size, onClick, ...props }, ref) => {
     return (
       <button
@@ -28,9 +27,9 @@ const ButtonRoot = React.forwardRef<HTMLButtonElement, ButtonProps>(
       >
         {isLoading && (
           <>
-            <Button.Icon>
+            <ButtonIcon>
               <FaSpinner className="animate-spin" />
-            </Button.Icon>
+            </ButtonIcon>
           </>
         )}
         {!isLoading && children}
