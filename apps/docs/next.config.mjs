@@ -6,7 +6,7 @@ import oneDarkPro from "shiki/themes/one-dark-pro.mjs";
 const nextConfig = {
   output: "export",
   distDir: "dist",
-  basePath: ".",
+  assetPrefix: process.env.ASSET_PREFIX || "",
   images: {
     domains: [],
   },
