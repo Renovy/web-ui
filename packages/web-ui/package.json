@@ -1,6 +1,6 @@
 {
   "name": "@renovy/web-ui",
-  "version": "0.3.4",
+  "version": "0.3.8",
   "type": "module",
   "repository": "https://github.com/Renovy/web-ui",
   "main": "./dist/index.js",
