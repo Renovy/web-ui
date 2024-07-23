@@ -41,13 +41,13 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
 
-      - name: install
-        run: npm ci
-
       - name: create .npmrc
         run: |
           echo "@renovy:registry=https://npm.pkg.github.com" >> .npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}" >> .npmrc
+
+      - name: install
+        run: npm ci
 
       - name: build
         run: npm run build
