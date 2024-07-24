@@ -1,3 +1,5 @@
+import { redirect } from "next/navigation";
+
 export default async function Home() {
-  return <div>Hello there!</div>;
+  redirect("/components/Button");
 }

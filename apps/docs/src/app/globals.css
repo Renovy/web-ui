@@ -1,29 +1,24 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "@renovy/web-ui/src/styles/global.css";
 
-@layer base {
-  :root {
-    --accent: 35, 69, 107;
+:root {
+  --accent: 35, 69, 107;
 
-    --page-padding: 0.5rem;
-  }
-
-  .dark {
-  }
+  --page-padding: 0.5rem;
 }
 
-@layer components {
-  h1 {
-    @apply text-4xl my-3 pb-2;
-  }
+h1 {
+  @apply text-4xl my-3 font-semibold;
+}
 
-  h2 {
-    @apply text-3xl my-3 pb-2 border-b border-zinc-300 dark:border-slate-500;
-  }
+h2 {
+  @apply text-2xl my-3 pb-2 font-semibold border-b border-zinc-300 dark:border-slate-500;
+}
 
-  pre {
-    overflow-x: auto;
-    @apply p-4 rounded-md;
-  }
+h3 {
+  @apply text-xl mb-3 mt-5 font-semibold;
+}
+
+pre {
+  overflow-x: auto;
+  @apply p-4 rounded-md;
 }

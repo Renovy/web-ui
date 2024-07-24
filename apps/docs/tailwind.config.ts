@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 
 const config: Config = {
   darkMode: "selector",
-  content: ["./src/**/*.{ts,tsx}", "./node_modules/@renovy/web-ui/src/**/*.{ts,tsx}"],
+  content: ["./src/**/**/*.{js,ts,jsx,tsx,mdx}", "../../node_modules/@renovy/web-ui/src/**/*.{ts,tsx}"],
   theme: {
     extend: {
       colors: {
