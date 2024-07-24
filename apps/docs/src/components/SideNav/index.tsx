@@ -3,8 +3,8 @@ import { Sidebar } from "@renovy/web-ui";
 export function SideNav() {
   return (
     <Sidebar.Root>
-      <Sidebar.Content className="text-xl">
-        <div className="flex flex-col gap-y-5">
+      <Sidebar.Content className="text-xl py-7">
+        <div className="flex flex-col gap-y-10">
           <ul className="flex flex-col gap-y-1">
             <li className="font-bold">Getting Started</li>
             <li className="text-zinc-400">Introdução</li>
