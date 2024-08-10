@@ -20,5 +20,6 @@ h3 {
 
 pre {
   overflow-x: auto;
-  @apply p-4 rounded-md;
+  
+  @apply p-4 rounded-md border border-[--border];
 }

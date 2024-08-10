@@ -1,0 +1,22 @@
+# Button
+
+<span className="text-muted-foreground">Um conjunto de itens verticais que cada um revela uma sessão de conteúdo.</span>
+
+<ComponentPreview name="accordion-demo" />
+
+## Uso
+
+```tsx
+import { Accordion } from "@renovy/web-ui";
+```
+
+```tsx
+<Accordion.Root>
+  <Accordion.Item value="item-1">
+    <Accordion.Trigger>Is it accessible?</Accordion.Trigger>
+    <Accordion.Content>
+      Yes. It adheres to the WAI-ARIA design pattern.
+    </Accordion.Content>
+  </Accordion.Item>
+</Accordion.Root>
+```

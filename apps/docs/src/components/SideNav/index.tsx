@@ -14,7 +14,10 @@ export function SideNav() {
           <ul className="flex flex-col gap-y-1">
             <li className="font-bold">Componentes</li>
             <li className="text-zinc-400">
-              <a href="">Button</a>
+              <a href="/components/Accordion">Accordion</a>
+            </li>
+            <li className="text-zinc-400">
+              <a href="/components/Button">Button</a>
             </li>
             <li className="text-zinc-400">
               <a href="">Sidebar</a>

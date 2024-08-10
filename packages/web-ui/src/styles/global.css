@@ -4,13 +4,18 @@
 
 @layer base {
   :root {
-    --background: #F4F4F4;
-    --foreground: #2B303B;
+    --background: #f9fafb; /* gray-50 */
+    --foreground: #374151; /* gray-700 */
+
+    --muted: #d1d5db;
+    --muted-foreground: #6b7280;
 
     --border: rgba(33,33,33,.14);
 
     --accent: 21, 229, 119;
     --accent-foreground: 255, 255, 255;
+
+    --button-border-color: var(--border);
 
     --input-border: var(--border);
     --input-background: #FFF;
@@ -25,10 +30,13 @@
   }
 
   .dark {
-    --background: #2B303B;
+    --background: #27272a; /* zinc-800 */
     --foreground: #FFFFFF;
+
+    --muted: #3f3f46; /* zinc-700 */
+    --muted-foreground: #d4d4d8; /* zinc-400 */
     
-    --border: 240 3.7% 15.9%;
+    --border: #71717a; /*zinc-500*/
     
     --input-border: var(--border);
     --input-background: #FFF;

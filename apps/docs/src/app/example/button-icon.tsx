@@ -3,7 +3,7 @@ import { FaBeerMugEmpty } from "react-icons/fa6";
 
 export default function ButtonDemo() {
   return (
-    <div className="space-x-3">
+    <div className="flex space-x-3">
       <Button.Root size="icon">
         <Button.Icon>
           <FaBeerMugEmpty />

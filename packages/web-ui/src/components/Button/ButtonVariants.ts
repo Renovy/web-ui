@@ -1,15 +1,15 @@
 import { cva } from "class-variance-authority";
 
 export const buttonVariants = cva(
-  `inline-flex min-w-[130px] w-fit items-center justify-center text-sm font-medium space-x-3 rounded px-3 py-1
-  transition-all border bg-[--button-background] text-[--button-foreground]
+  `rn-button flex min-w-[130px] w-fit items-center justify-center text-sm font-medium space-x-3 rounded px-3 py-1
+  transition-all bg-[--button-background] text-[--button-foreground]
   focus-visible:ring-0 focus-visible:border-[--input-ring] focus-visible:outline-none
   disabled:pointer-events-none disabled:opacity-50`,
   {
     variants: {
       variant: {
-        default: `border bg-white hover:bg-zinc-100 active:bg-zinc-200
-          dark:text-accent`,
+        default: `border border-[--button-border-color] bg-white hover:bg-zinc-100 active:bg-zinc-200
+          dark:text-accent dark:border-none`,
         accent: `text-white bg-accent border-[--input-ring]
           hover:bg-accent/70 
           active:bg-accent/90 

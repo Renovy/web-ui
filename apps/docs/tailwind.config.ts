@@ -7,6 +7,8 @@ const config: Config = {
     extend: {
       colors: {
         accent: "rgba(var(--accent), <alpha-value>)",
+        muted: "var(--muted)",
+        "muted-foreground": "var(--muted-foreground)",
       },
     },
   },
