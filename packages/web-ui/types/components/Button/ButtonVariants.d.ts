@@ -1,4 +1,4 @@
 export declare const buttonVariants: (props?: {
-    variant?: "default" | "accent" | "success" | "danger" | "ghost";
-    size?: "default" | "sm" | "lg" | "icon";
+    variant?: "default" | "success" | "danger" | "accent" | "ghost";
+    size?: "default" | "icon" | "sm" | "lg";
 } & import("class-variance-authority/types").ClassProp) => string;

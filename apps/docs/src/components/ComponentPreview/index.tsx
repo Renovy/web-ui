@@ -18,7 +18,7 @@ export async function ComponentPreview({ name, title }: { name: string; title: s
         </Tabs.List>
 
         <Tabs.Content value="preview">
-          <div className="min-h-48 w-full flex items-center justify-center border border-zinc-500 rounded-md">
+          <div className="min-h-48 w-full flex items-center p-4 justify-center border border-zinc-500 rounded-md">
             <Suspense fallback={<div>Carregando...</div>}>
               <Component />
             </Suspense>

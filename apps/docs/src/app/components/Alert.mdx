@@ -1,0 +1,27 @@
+# Button
+
+<span className="text-muted-foreground">Exibe um alerta</span>
+
+<ComponentPreview name="alert-demo" />
+
+## Uso
+
+```tsx
+import { Alert } from "@renovy/web-ui"
+```
+
+```tsx
+<Alert.Root icon={<FaBeerMugEmpty />}>
+  <Alert.Title>Title</Alert.Title>
+  <Alert.Description>
+    Content
+  </Alert.Description>
+</Alert.Root>
+```
+
+## Exemplos
+
+<ComponentPreview name="alert-success" title="Sucesso" />
+<ComponentPreview name="alert-danger" title="Perigo" />
+<ComponentPreview name="alert-info" title="Info" />
+<ComponentPreview name="alert-warning" title="Aviso" />
